@@ -2,6 +2,7 @@ const app = Vue.createApp({
     // template: "<h2>I am the template</h2>"
     data() {
         return {
+            showProp: true,
             name: 'Kyle',
             age: 27,
             score: 0,
@@ -10,6 +11,9 @@ const app = Vue.createApp({
     methods: {
         changeName() {
             this.name = "Bill"
+        },
+        toggleProp() {
+            this.showProp = !this.showProp
         }
     }
 })
