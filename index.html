@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue3_practice</title>
+    <link rel="stylesheet" href="./Vue3_practice/style/style.css">
     <script src="https://unpkg.com/vue@3"></script>
 </head>
 <body>
@@ -20,6 +21,12 @@
             <span v-else>show the property</span>
         </button>
         <div v-show="!showProp">collapsing property</div>
+        <br>
+
+        <div class="box" @mouseover="">mouseover (enter)</div>
+        <div class="box">mouseleave</div>
+        <div class="box">double click</div>
+        <div class="box"></div>
            
     </div>
     <script src="./Vue3_practice/script/app.js"></script>
