@@ -9,6 +9,10 @@
 <body>
     <div id="app">
         <h2>Hi, my name is {{ name }}.</h2>
+        <h3>I,m {{ age }}</h3>
+        <h3>I got {{ score }} in the game</h3>
+        <button v-on:click="score++">Increase the score</button>
+        <button v-on:click="score--">Decrease the score</button>
     </div>
     <script src="./Vue3_practice/script/app.js"></script>
 </body>

@@ -2,7 +2,9 @@ const app = Vue.createApp({
     // template: "<h2>I am the template</h2>"
     data() {
         return {
-            name: 'Kyle'
+            name: 'Kyle',
+            age: 27,
+            score: 0,
         }
     }
 })
