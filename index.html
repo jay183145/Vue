@@ -10,9 +10,7 @@
     <div id="app" >
         <div v-if="showProp">
             <h2>Hi, my name is {{ name }}.I,m {{ age }}</h2>
-            <h1>I got {{ score }} in the game</h1>
-        </div>
-        <div>    
+            <h1>I got {{ score }} in the game</h1>   
             <button v-on:click="score++">Increase the score</button>
             <button v-on:click="score--">Decrease the score</button>
             <div @click="changeName">Click me to change my name</div>
@@ -21,6 +19,7 @@
             <span v-if="showProp">collapse the property</span>
             <span v-else>show the property</span>
         </button>
+        <div v-show="!showProp">collapsing property</div>
            
     </div>
     <script src="./Vue3_practice/script/app.js"></script>
