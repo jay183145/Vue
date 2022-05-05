@@ -6,6 +6,9 @@ const app = Vue.createApp({
             name: 'Kyle',
             age: 27,
             score: 0,
+            eventHappened: "Event Happened!",
+            x: 0,
+            y: 0,
         }
     },
     methods: {
@@ -14,6 +17,16 @@ const app = Vue.createApp({
         },
         toggleProp() {
             this.showProp = !this.showProp
+        },
+        handleEvent(event, data) {
+            console.log(event,event.type)
+            if (data) {
+                console.log(data);
+            }
+        },
+        handleMouseMove(e) {
+            this.x = e.offsetX
+            this.y = e.offsetY
         }
     }
 })
